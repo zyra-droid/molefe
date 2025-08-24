@@ -1,0 +1,140 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+head{
+  text-align: left;
+  text-decoration: underline;
+}
+  
+body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9fafc;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+}
+
+header {
+      position: relative;
+      background: 
+         linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+         url('Suppliers.webp') no-repeat center/cover;
+      height: 200px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
+header h1{
+  text-align: left;
+  text-decoration: underline;
+}
+
+nav {
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+nav a:hover {
+  color: #ffd54f;
+  text-decoration: underline;
+}
+
+  h1 {
+    text-align: center;
+    color: #2d6a4f;
+    margin-bottom: 30px;
+  }
+
+  .supplier-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+  }
+
+.supplier-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.supplier-card:hover {
+    transform: scale(1.02);
+}
+
+.supplier-card h3 {
+    margin-top: 0;
+    color: #40916c;
+}
+
+.supplier-card p {
+    margin: 8px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+  @media (max-width: 768px) {
+    .supplier-container {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+  }
+
+  /* Mobile */
+  @media (max-width: 480px) {
+    body {
+      padding: 10px;
+    }
+
+    .supplier-card {
+      padding: 12px;
+    }
+
+    .supplier-card p {
+      font-size: 13px;
+    }
+  }
+
+   footer {
+      text-align: center;
+      padding: 15px;
+      background: #1b1b1b;
+      color: white;
+    }
+
+    footer a {
+      color: #ffd54f;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }

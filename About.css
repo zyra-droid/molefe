@@ -1,0 +1,205 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9fafc;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  position: relative;
+  background: 
+    linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)),
+    url('About\ us.jpg') no-repeat center/cover;
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;    /* logo + title aligned vertically */
+  padding: 0 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-left: 15px;   /* space between logo & title */
+  z-index: 1;
+  white-space: nowrap; /* prevents awkward wrapping */
+  align-content: flex-start;
+}
+
+
+h1{
+  align-content: flex-start;
+}
+
+
+
+/* Navigation */
+nav {
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #f1f1f1;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffd54f;
+  text-decoration: underline;
+}
+
+/* Logo inside header */
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 40px 60px;
+  max-width: 1000px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Section headings */
+main h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Paragraphs */
+main p {
+  margin-bottom: 20px;
+  text-align: justify;
+  font-size: 17px;
+}
+
+/* Lists */
+main ul {
+  margin: 15px 0;
+  padding-left: 20px;
+}
+
+main li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #1b1b1b;
+  color: white;
+}
+
+footer a {
+  color: #ffd54f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  header {
+    height: 160px;
+  }
+
+  header h1 {
+    font-size: 30px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+    top: 15px;
+    left: 15px;
+  }
+
+  main {
+    padding: 30px 30px;
+    margin: 15px;
+  }
+
+  main h2 {
+    font-size: 24px;
+  }
+
+  main p,
+  main li {
+    font-size: 15px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  header {
+    height: 140px;
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav a {
+    font-size: 15px;
+    margin: 0 6px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    top: 10px;
+    left: 10px;
+  }
+
+  main {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  main h2 {
+    font-size: 20px;
+  }
+
+  main p,
+  main li {
+    font-size: 14px;
+  }
+}
